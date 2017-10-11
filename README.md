@@ -17,15 +17,34 @@ See below for what you need in order to use the code in this repository.
 
 ### Setting Up
 
-1. Create a file in the root directory of the repository name emails2.txt
+1. Create a file in the root directory of the repository named emails2.txt
 
-2. Inside the file, add emails addresses and names separated by a comma
-  e.g.
+2. Inside the file, add emails addresses and names separated by a comma. For example:
+
   ```
   email.one@test.com, Person one
   email.two@test.com, Person two
   email.three@test.com, Person three
   ```
 
-emails.txt - is the file that contains the customer emails
-emails2.txt - is a file that contains customer emails and customer names. The email and names are separated by ', ' (comma separated file)
+3. Create a file in the root directory of the repository named schedule.txt
+
+4. Inside the file, add a schedule in the same format as below. For example:
+  ```
+  Hiking - 9:00am
+  Taco Lunch - 12:00pm
+  Surfing - 2:00pm
+  Happy Hour - 5:00pm
+  ```
+
+5. It would also be a good idea to create a config.py file. Inside this file you will want to store two things:
+  ```
+  openweathermap_app_id = "YOUR_APP_ID"
+  my_email_address = 'YOUR_EMAIL_ADDRESS'
+  ```
+
+6. be sure to include a .gitignore and ignore the files I mentioned about.
+
+## Notes
+
+1. In the mailer.py file, edit the message to whatever you would like to send.
